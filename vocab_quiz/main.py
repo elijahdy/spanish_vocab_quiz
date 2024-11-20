@@ -24,7 +24,7 @@ class Question:
         given_answer = input(f'Type a spanish translation for the {self.word_type} "{self.word}": ')
         correct = False
         for i,answer in enumerate(self.answers):
-            if given_answer in answer:
+            if given_answer in answer and given_answer != '':
                 correct = True
                 break
         if correct:
