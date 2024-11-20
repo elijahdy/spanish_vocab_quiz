@@ -10,3 +10,6 @@
   - `python spanish_quiz.py normal <desired_number_of_questions>`
 - Once you have saved some translations to notes you can also do a quiz with only words from your notes by running: 
   - `python spanish_quiz.py notes <desired_number_of_questions>`
+
+## Study notes
+- when you save questions to notes they can be found in `notes/saved_translations.txt` to study whenever you want
