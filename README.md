@@ -1,7 +1,7 @@
 ## Set-up
 - install python 3.10.12 (any python3 version should do, but it was developed on 3.10.12)
 - clone repository `git clone https://github.com/elijahdy/spanish_vocab_quiz`
-- open project directory in terminal
+- open project directory in terminal (`spanish_vocab_quiz/`)
 - run command `pip install -r requirements.txt`
 
 ## Quiz yourself
