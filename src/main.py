@@ -45,12 +45,12 @@ class Question:
         return ''.join(char for char in nfkd_form if not unicodedata.combining(char))
 
     def save_to_notes(self):
-        with open('../notes/saved_translations.txt','a') as f:
+        with open('notes/saved_translations.txt','a') as f:
             f.write(f'{self.word_type}: {self.word}\n')
             for answer in self.answers:
                 f.write(f'    - {answer}\n')
             f.write('-----------------------------------------------------------------------\n')
-        with open('../data/notes_word_bank.txt','a') as f:
+        with open('data/notes_word_bank.txt','a') as f:
             f.write(f'{self.word}\n')
 
 
@@ -91,7 +91,7 @@ class VocabQuiz:
             return False
 
     def import_words(self, num_words):
-        with open('../data/word_bank.txt', 'r') as f:
+        with open('data/word_bank.txt', 'r') as f:
             words = f.read().splitlines()
         self.words = sample(words, num_words)
 
@@ -113,7 +113,7 @@ class NotesVocabQuiz(VocabQuiz):
         super().__init__(num_questions)
 
     def import_words(self, num_words):
-        with open('../data/notes_word_bank.txt', 'r') as f:
+        with open('data/notes_word_bank.txt', 'r') as f:
             words = f.read().splitlines()
         if num_words > len(words):
             raise IOError('Given quiz size is larger than the number of words in notes')

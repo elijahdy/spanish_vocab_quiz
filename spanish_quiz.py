@@ -1,4 +1,4 @@
-from main import *
+from src.main import *
 import argparse
 
 if __name__ == '__main__':
