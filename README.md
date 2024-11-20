@@ -20,5 +20,5 @@
 
 ## Manually add words to your notes-quiz selection
 If there's specific words you want to show up in your notes quiz, you can open `data/notes_word_bank.txt` 
-and add enter any words you want on a their own line in the file
+and add any words you want on a their own line in the file
 *MAKE SURE YOU LEAVE A NEW LINE AFTER THE LAST WORD IN THE FILE*
